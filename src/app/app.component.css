@@ -1,0 +1,131 @@
+.background {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; 
+  position: relative;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 400px;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  transition: clip-path 0.1s linear;
+}
+
+.gif {
+  position: absolute;
+  background-image: url('/assets/img/popcat-pop.gif');
+  top: 0%;
+  width: 800px;
+  height: 800px;
+  background-size: cover;
+  display: none;
+  z-index: -1;
+}
+
+::ng-deep .eastereggOn .gif {
+  display: block;
+  animation: moveRight 5s linear forwards;
+}
+
+::ng-deep .eastereggOn h1 {
+  animation: eatText 5s linear forwards;
+}
+
+@keyframes moveRight {
+  0% {
+      left: -800px; 
+  }
+  100% {
+      left: 100%; 
+  }
+}
+
+@keyframes eatText {
+  0% {
+      clip-path: inset(0 0 0 0); 
+  }
+  20% {
+      clip-path: inset(0 0 0 20%); 
+  }
+  40% {
+      clip-path: inset(0 0 0 40%);
+  }
+  60% {
+      clip-path: inset(0 0 0 80%);
+  }
+  100% {
+      clip-path: inset(0 0 0 100%); 
+  }
+}
+
+
+
+.btn-conteiner {
+  display: flex;
+  justify-content: center;
+  --color-text: #ffffff;
+  --color-background: #ff135a;
+  --color-outline: #ff145b80;
+  --color-shadow: #00000080;
+  margin-top: 700px;
+  margin-right: 100px;
+}
+
+
+.btn-conteiner {
+  display: flex;
+  justify-content: center;
+  --color-text: #ffffff;
+  --color-background: #ff135a;
+  --color-outline: #ff145b80;
+  --color-shadow: #00000080;
+  margin-top: 700px;
+  margin-right: 100px;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+.btn-content:hover, .btn-content:focus {
+  transition: 0.5s;
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+
+@-webkit-keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+audio {
+  display: none;
+}
