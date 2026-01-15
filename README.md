@@ -1,5 +1,3 @@
-https://jsnuwu.github.io/EasterEggPoC/
-
 # EasterEggPoC
 
 Ein kleines **Proof of Concept (PoC)** für ein **Easter Egg auf einer Website**.
@@ -28,6 +26,8 @@ Das Projekt dient als **Experiment** und Ideen-Proof-of-Concept für Interaktion
 ---
 
 ## Nutzung
+
+- https://jsnuwu.github.io/EasterEggPoC/
 
 1. Code klonen:
    ```bash
